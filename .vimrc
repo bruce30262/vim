@@ -3,6 +3,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' } "NerdTree. On-demand loading
 Plug 'arcticicestudio/nord-vim' "Nord Theme
+Plug 'itchyny/lightline.vim' "lightline status line
 "vim-snipmate plugins
 "snipmate depends on vim-addon-mw-utils & tlib_vim
 "vim-snippets: vim-snipmate default snippets 
@@ -65,12 +66,9 @@ colorscheme nord
 "spell check color setting
 hi clear SpellBad
 hi SpellBad term=underline cterm=underline ctermfg=red
-"powerline
+"lightline
 set laststatus=2
 set t_Co=256
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
 
 " Custom command Settings
 "pwning script for CTF
