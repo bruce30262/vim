@@ -5,7 +5,7 @@ set -e
 sudo apt update
 
 echo "Installing dependencies..."
-sudo apt install -y vim powerline fonts-powerline curl
+sudo apt install -y vim curl
 
 echo "Installing vim-plug..."
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
