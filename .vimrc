@@ -13,9 +13,7 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
 Plug 'bruce30262/vim-snippets-custom' "My own custom vim-snippets
 Plug 'Vimjas/vim-python-pep8-indent' "Python PEP8 indent
-"Tmux vim clipboard, depends on vim-tmux-focus-events
-Plug 'roxma/vim-tmux-clipboard'
-Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'roxma/vim-tmux-clipboard' "Tmux vim clipboard
 call plug#end()
 "override with custom snippets
 let g:snipMate = { 'override' : 1 }
